@@ -9,6 +9,12 @@ label {
   width: 100px;
 }
 
+h1 {
+  font-family: 'Playfair Display SC';
+  font-size: 64px;
+  text-align: center;
+}
+
 header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -54,7 +60,26 @@ table {
   text-overflow: ellipsis;
 }
 
-/* Column Size for thead */
+tr:nth-child(odd){
+  background-color: #fff0c7;
+}
 
+/* Column Size for thead */
+th:nth-child(-n+3),
+th:nth-child(7) {
+  width: 10%
+}
+
+th:nth-child(4):nth-child(5) {
+  width: 30%;
+}
 
 /* Column size for tbody */
+td:nth-child(-n+3),
+td:nth-child(7) {
+  width: 10%
+}
+
+td:nth-child(4):nth-child(5) {
+  width: 30%;
+}
