@@ -12,11 +12,11 @@ function RecipeView({ recipe, deleteRecipe }) {
       <td>
         <img src={recipe.photo} alt="created recipe" />
       </td>
-      <td>
-        <p className="content_td">{recipe.ingredients}</p>
+      <td className="content_td">
+        <p>{recipe.ingredients}</p>
       </td>
-      <td>
-        <p className="content_td">{recipe.preparation}</p>
+      <td className="content_td">
+        <p>{recipe.preparation}</p>
       </td>
       <td>
         <button name="delete" onClick={deleteRecipe}>

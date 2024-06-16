@@ -9,8 +9,8 @@ function App() {
     
   const createRecipe = (newRecipe) =>
     setRecipes((currentRecipes) => [
-      newRecipe, 
       ...currentRecipes,
+      newRecipe, 
     ]);
 
   const deleteRecipe = (indexToDelete) =>
