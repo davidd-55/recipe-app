@@ -22,7 +22,7 @@ function RecipeCreate({ createRecipe }) {
     event.preventDefault();
 
     // reate recipe with passed in hook
-    createRecipe({ formData });
+    createRecipe(formData);
 
     // reset form data
     setFormData({ ...initialFormState });
